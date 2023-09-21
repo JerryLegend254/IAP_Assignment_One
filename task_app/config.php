@@ -1,7 +1,7 @@
 <?php
 
 $conf["site_name"] = "ICS 2.2";
-$conf["au_email_address"] = "info@icsd.rochella.org";
+$conf["au_email_address"] = "nick";
 
 $conf['db_type'] = "PDO";             /* Connection Type */
 $conf['db_hostname'] = "localhost";       /* Hostname */
