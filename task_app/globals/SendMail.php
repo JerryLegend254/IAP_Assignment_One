@@ -1,4 +1,9 @@
 <?php
+$details["sendToName"] = $_POST["name"];
+$details["sendToEmail"] = $_POST["email"];
+$details["emailSubjectLine"] = $_POST["subject"];
+$details["emailMessage"] = $_POST["message"];
+
 class SendMail{
 	public function SendeMail($details=array(), $conf){
 		if(!empty($details["sendToEmail"]) & !empty($details["sendToName"]) & !empty($details["emailSubjectLine"]) & !empty($details["emailMessage"])){
