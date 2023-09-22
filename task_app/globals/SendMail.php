@@ -1,4 +1,5 @@
-<?php
+<?php 
+
 $details["sendToName"] = $_POST["name"];
 $details["sendToEmail"] = $_POST["email"];
 $details["emailSubjectLine"] = $_POST["subject"];
