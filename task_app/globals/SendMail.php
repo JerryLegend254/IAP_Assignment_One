@@ -2,11 +2,14 @@
 
 
 use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 //Download PHP mailer library from Github and add to project
 //Turn on two-step verification code from email account to be used
 //Get app password for the email
+
+require 'vendor/autoload.php';
 
 // require './mailer/src/Exception.php';
 // require './mailer/src/PHPMailer.php';
@@ -20,12 +23,13 @@ class SendMail{
 			$subject = $details["emailSubjectLine"];
 			$message = $details["emailMessage"];
 			$senderName = $conf['sender_name'];
-		try {
 			$mail = new PHPMailer(true);
+
+		try {
 			$mail->isSMTP();
-			$mail->Host = 'smtp.gmail.com'; //main SMTP server
+			$mail->Host = 'smtp.sendgrid.net'; //main SMTP server
 			$mail->SMTPAuth = true; //enable SMTP Authentication
-			$mail->Username = $emailFrom; //Username
+			$mail->Username = $conf['username_email']; //Username
 			$mail->Password = $conf['api_key']; //secret password of email account awdjldafizeqtvrg-Dennis
 			$mail->Port = 465;
 			$mail->SMTPSecure = 'ssl';
