@@ -1,0 +1,110 @@
+MAIN BRANCH WORKFLOW
+
+Explaining api key deletion hence task app email functionality is stale
+JerryLegend254pushed 1 commit • e177b1e…78e29de • 2 hours ago
+Final commit with code clean up and comments
+JerryLegend254pushed 1 commit • f9fe568…e177b1e • 2 hours ago
+Prep for merge with Telvin
+JerryLegend254pushed 4 commits • bed893e…f9fe568 • 3 hours ago
+Config refactor
+JerryLegend254pushed 1 commit • 18326ab…bed893e • 4 hours ago
+Merge branch 'main' of https://github.com/JerryLegend254/IAP_Assignme…
+JerryLegend254pushed 2 commits • a354ac2…18326ab • 7 hours ago
+Minor Improvemts
+NickoBeast1pushed 1 commit • 3a75533…a354ac2 • 7 hours ago
+Database changes
+NickoBeast1pushed 1 commit • 4f266c9…3a75533 • 7 hours ago
+Merge branch 'nick'
+NickoBeast1pushed 14 commits • 103fdeb…4f266c9 • 8 hours ago
+Merge branch 'main' of https://github.com/JerryLegend254/IAP_Assignme…
+JerryLegend254pushed 2 commits • cb3844e…103fdeb • 8 hours ago
+Added Some Css To Contact Workpage
+NickoBeast1pushed 1 commit • 2d01e65…cb3844e • 13 hours ago
+Added a Functional Workpage
+NickoBeast1pushed 1 commit • b3400a6…2d01e65 • 13 hours ago
+Removed contact page due to some errors
+NickoBeast1pushed 1 commit • b6ae470…b3400a6 • 13 hours ago
+Committing Changes
+NickoBeast1pushed 1 commit • 01d4266…b6ae470 • 14 hours ago
+Commmiting the project without contact us and user list functionality
+JerryLegend254pushed 5 commits • 9f7fbef…01d4266 • 14 hours ago
+Initial commit
+ElvisMwitaripushed 1 commit • 168ad88…9f7fbef • 2 days ago
+Initial commit with task app
+JerryLegend254pushed 1 commit • cb6405c…168ad88 • 2 days ago
+Initial commit
+JerryLegend254created this branch • cb6405c • 2 days ago
+
+NICK BRANCH WORKFLOW
+
+Adding a user's database table
+NickoBeast1pushed 1 commit • 1f4d300…a670936 • 8 hours ago
+commit
+NickoBeast1pushed 1 commit • eb7f032…1f4d300 • 11 hours ago
+commit
+NickoBeast1pushed 5 commits • e7be85e…eb7f032 • 11 hours ago
+Trial
+NickoBeast1pushed 1 commit • 96e84e5…e7be85e • 11 hours ago
+Merge branch 'nick' of https://github.com/JerryLegend254/IAP_Assignme…
+NickoBeast1pushed 2 commits • 90713ae…96e84e5 • 11 hours ago
+Merging main with nick branch
+JerryLegend254pushed 1 commit • dcbc5dc…90713ae • 12 hours ago
+Added my Send-mail page that has a problem
+NickoBeast1pushed 9 commits • d51f087…dcbc5dc • 13 hours ago
+Nick title
+JerryLegend254pushed 1 commit • 38e8f86…d51f087 • 2 days ago
+Committed
+JerryLegend254pushed 1 commit • 9f7fbef…38e8f86 • 2 days ago
+Initial commit
+JerryLegend254created this branch • 9f7fbef • 2 days ago
+
+JERE BRANCH WORKFLOW
+
+Config refactor
+JerryLegend254pushed 24 commits • 93b605a…bed893e • 4 hours ago
+Task app complete with all functionality in specifications including …
+JerryLegend254pushed 1 commit • 01d4266…93b605a • 8 hours ago
+Commmiting the project without contact us and user list functionality
+JerryLegend254pushed 1 commit • 8048910…01d4266 • 14 hours ago
+Added instruction 2 project folder
+JerryLegend254pushed 1 commit • 51ecde3…8048910 • 22 hours ago
+Finished email sign up functionality without verification using tokens
+JerryLegend254pushed 1 commit • 9013e9b…51ecde3 • 22 hours ago
+Incomplete send mail function
+JerryLegend254pushed 2 commits • 9f7fbef…9013e9b • 23 hours ago
+Initial commit
+JerryLegend254created this branch • 9f7fbef • 2 days ago
+
+RYAN BRANCH WORKFLOW
+
+Change
+NickoBeast1pushed 26 commits • 9f3dd78…52d84d1 • 8 hours ago
+Send Mail
+152090RNpushed 3 commits • 76a3fcf…9f3dd78 • yesterday
+Send email
+152090RNpushed 2 commits • 9f7fbef…76a3fcf • yesterday
+Initial commit
+JerryLegend254created this branch • 9f7fbef • 2 days ago
+
+MWITARI BRANCH WORKFLOW
+
+Update contact.php
+ElvisMwitaripushed 1 commit • 9f7fbef…5fcf1b0 • 2 days ago
+Initial commit
+ElvisMwitaricreated this branch • 9f7fbef • 2 days ago
+
+CLIFF BRANCH WORKFLOW
+
+Config refactor
+cliffkoomecreated this branch • bed893e • 2 hours ago
+
+TELVIN BRANCH WORKFLOW
+
+Finished styling view user page and making it the index page
+JerryLegend254pushed 1 commit • 8ecd99e…7cde91c • 3 hours ago
+Config refactor
+JerryLegend254pushed 1 commit • 7241563…8ecd99e • 4 hours ago
+Added the functionality of viewing users, yet to add the css
+TelvinMugambipushed 1 commit • 4f266c9…7241563 • 7 hours ago
+Merge branch 'nick'
+TelvinMugambicreated this branch • 4f266c9 • 8 hours ago
