@@ -22,12 +22,12 @@ class auth{
                 $MYSQL->insert($table, $data);
                 
                 $replacements = array('fullname' => 'Buddy', 'site_name' => $conf["site_name"]);
-                // $OBJ_SendMail->SendeMail([
-                //     'sendToEmail' => $email_address,
-                //     'sendToName' => $replacements["fullname"],
-                //     'emailSubjectLine' => $conf["site_name"] ." - ". $lang["subject_sign_up_verify"],
-                //     'emailMessage' => $this->bind_to_template($replacements, $lang["sign_up_verify"])
-                // ], $conf);
+                $OBJ_SendMail->SendeMail([
+                    'sendToEmail' => $email_address,
+                    'sendToName' => $replacements["fullname"],
+                    'emailSubjectLine' => $conf["site_name"] ." - ". $lang["subject_sign_up_verify"],
+                    'emailMessage' => $this->bind_to_template($replacements, $lang["sign_up_verify"])
+                ], $conf);
             }
         }
     }
