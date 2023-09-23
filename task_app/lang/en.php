@@ -6,9 +6,11 @@ Hello {{fullname}},
 
 You requested an account on {{site_name}}.
 
-In order to use this account click <a href = '#'>here</a> to complete the registration process.
+In order to use this account <a href ='localhost/150463/IAP_ASSIGNMENT_ONE/task_app/signupVerify.php?token={{token}}'>Click Here</a> to complete the registration process.
 
 Regards,
 Systems Admin
 {{site_name}}
 ";
+
+$lang["sign_up_verify"] = nl2br($lang["sign_up_verify"]); //applies nl2br to format email as shown above

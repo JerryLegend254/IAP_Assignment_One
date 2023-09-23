@@ -35,27 +35,54 @@ class forms{
     }
     public function sign_up_form(){
         ?>
-<div class="row align-items-md-stretch">
-   <div class="col-md-6">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-         <form action="" method="POST">
-            <div class="mb-3 form-group">
-               <label for="exampleInputEmail1">Email address</label>
-               <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
-         </form>
+<div class="row align-items-md-stretch py-4">
+      
+      <div class="col-md-6">
+         
+         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <?php if (isset($_GET['token'])) {
+               $token = $_GET['token'];
+               if ($token == 'pending') {
+                  ?>
+                  <div class="mr-5 alert alert-info" role="alert">
+                     A verification email has been sent to your email address.
+                  </div>
+               <?php } else if ($token == 'invalid') {
+               ?>
+                  <div class="mr-5 alert alert-danger" role="alert">
+                     The token is invalid. Please register again.
+                  </div>
+               <?php }
+            } 
+            ?>
+         
+            <form action="" method="POST">
+               <div class="mb-3 form-group">
+                  
+                  <label for="username" class="form-label">Username</label>
+                  <input type="text" class="form-control" id="username" name="username" placeholder="Username" required>
+                  <label for="userFname" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="userFname" name="fullname" placeholder="Full Name" required>
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" name="password">
+                  <label for="exampleInputPassword2" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword2" name="confPassword">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+               </div>
+               <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
+            </form>
+         </div>
+      </div>
+      <div class="col-md-6">
+         <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h2>Useful Instructions</h2>
+            <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
+            <button class="btn btn-outline-secondary" type="button">Example button</button>
+         </div>
       </div>
    </div>
-   <div class="col-md-6">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-         <h2>Useful Instructions</h2>
-         <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's content for equal-height.</p>
-         <button class="btn btn-outline-secondary" type="button">Example button</button>
-      </div>
-   </div>
-</div>
         <?php
     }
     
