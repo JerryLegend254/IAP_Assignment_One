@@ -1,0 +1,41 @@
+@import './styles.css';
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    
+}
+
+table{
+    font-size: 1em;
+    font-weight: 600;
+    color: #130F31;
+}
+
+th{
+    text-align: left;
+    background-color: #ea8e86;
+    text-transform: uppercase;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+tr{
+    margin-top: 4px;
+}
+
+td, th{
+    padding: 6px;
+}
+
+.heading{
+    font-size: 2em;
+    font-weight: 800;
+    color: #130F31;
+}

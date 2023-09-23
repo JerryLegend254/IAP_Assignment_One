@@ -2,7 +2,7 @@
 require "constants.php"; 
 $servername = 'localhost';
 $username = 'root';
-$pass = '';
+$pass = "";
 $dbname = 'blog_db';
 
 

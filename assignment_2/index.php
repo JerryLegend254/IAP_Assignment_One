@@ -2,21 +2,43 @@
 include_once "partials/header.php";
 
 ?>
- <link type="text/css" rel="stylesheet" href="css/home.css" />
+ <link type="text/css" rel="stylesheet" href="css/viewUsers.css" />
 <?php
 include_once "partials/navBar.php";
 ?>
-
 <div class="main">
-    <p class="design">DESIGN</p>
-    <img class="switcher" src="./images/switcher.svg" />
-    <img class="custom" src="./images/custom.svg" />
-    <p class="h1">DESIGNER'S PRIDE COMMUNITY</p>
-    <p class="contentText">A platform to bring together <span class="bolded">designers</span>. Join us and find a home in our amazing community.</p>
-    <a href="./signUp.php"><input id="submit" type="submit" value="GET STARTED" /></a>
-</div>
+    <p class="heading">SIGNED UP USERS</p>
+    <table>
+        <tr>
+            <td>#</td>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+<?php
+$user_data = "SELECT * FROM `author_tbl` ORDER BY username ASC";
+$result = $conn->query($user_data);
 
+$serial=1;
 
+if($result->num_rows > 0){
+    while($user_row = $result->fetch_assoc()){
+?>     
+        <tr>
+            <td><?php print $serial; $serial++; ?>.</td>
+            <td class="capitalize"><?php print $user_row["username"]; ?></td>
+            <td class="capitalize"><?php print $user_row["full_name"]; ?></td>
+            <td><?php print $user_row["email"]; ?></td>
+            
+        </tr>
+<?php
+    }
+} else{
+    echo "Failed";
+}
+?>
+
+    </table>
+    </div>
 </body>
-
 </html>
