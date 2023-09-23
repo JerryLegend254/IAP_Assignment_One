@@ -2,7 +2,7 @@
 
 $conf["site_name"] = "Nick";
 $conf["au_email_address"] = "info@icsd.rochella.org";
-$conf["site_name"] = "ICS 2.2";
+$conf["site_name"] = "NickoBeast";
 $conf["au_email_address"] = "jeremy.okuto@strathmore.edu";
 
 $conf['db_type'] = "PDO";             /* Connection Type */
