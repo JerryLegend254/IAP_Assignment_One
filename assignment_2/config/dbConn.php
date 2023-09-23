@@ -1,8 +1,8 @@
 <?php
 require "constants.php"; 
-$servername = '127.0.0.1:3307';
+$servername = 'localhost';
 $username = 'root';
-$pass = '';
+$pass = "";
 $dbname = 'blog_db';
 
 
