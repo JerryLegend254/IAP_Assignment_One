@@ -1,6 +1,8 @@
 <?php
 require_once "ClassAutoLoad.php";
 date_default_timezone_set("Africa/Nairobi");
+
+// check if token is passed as parameter in the url
 if (isset($_GET['token'])) {
     $token = $_GET['token'];
     $result = $MYSQL->select("select * from users where token='$token' AND token_valid='1'");
@@ -10,13 +12,12 @@ if (isset($_GET['token'])) {
         echo "</pre>";
         $token_expired = new DateTime($result['token_expire']) < new DateTime('now');
         if ($token_expired === 1) {
-            //Token has expired
+            // Token has expired
             invalidateToken($MYSQL, $result['token']);
             handle_token_invalid();
             exit();
         } else {
-            //Token is valid
-            //Invalidate the token since the email has already been verified
+            // Invalidate the token since the email has already been verified
             invalidateToken($MYSQL, $result['token']);
             session_start();
             $_SESSION['user'] = $result;
@@ -31,11 +32,13 @@ if (isset($_GET['token'])) {
     
 }
 
+// function to redirect the user to sign up page in the case the token is invalid
 function handle_token_invalid() {
     header("Location: signup.php?token=invalid");
     exit();
 }
 
+// function to make a token invalid which will be used either when time elapses or user verifies email
 function invalidateToken($MYSQL, $token) {
     $table = "users";
     $data = array("token_valid" => 0);
